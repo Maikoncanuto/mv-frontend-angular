@@ -18,7 +18,7 @@ export class AmbienteCreateContainerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSave(ambiente: Ambiente): void {
+  onCreate(ambiente: Ambiente): void {
     this.ambienteService.save(ambiente);
   }
 

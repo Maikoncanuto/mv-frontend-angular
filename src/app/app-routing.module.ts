@@ -6,7 +6,6 @@ const routes: Routes = [
     path: 'ambientes',
     loadChildren: () => import('./features/ambiente/ambiente.module').then(ambienteModule => ambienteModule.AmbienteModule)
   }
-
 ];
 
 @NgModule({
