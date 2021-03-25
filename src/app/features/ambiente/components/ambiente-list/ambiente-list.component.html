@@ -1,89 +1,52 @@
-<div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <img src="assets/image/Vector.png" alt="">
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <img src="assets/image/Vector(1).png" alt="">
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <img src="assets/image/Vector(2).png" alt="">
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <img src="assets/image/Installer.png" alt="">
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <img src="assets/image/Vector(3).png" alt="">
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-      <img src="assets/image/user.png" alt="">
+<div fxLayout="column" fxFlexAlign="center" class="mv-navbar-container">
+
+  <div fxFlex="60" class="mv-navbar">
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="mv-navbar-content">
+      <div class="logo">
+        <p>MVinstaller</p>
+      </div>
+
+      <div class="mv-navbar-actions" fxLayout="row">
+        <p>Icon</p>
+        <p>Icon</p>
+      </div>
     </div>
   </div>
 
-  <div class="row">
-    <h3>Olá, você está no ambiente - Produção.</h3>
-    <button pButton pRipple type="button" label="Setup Atual" class="p-button-outlined p-button-secondary"></button>
-    <button pButton pRipple type="button" label="Servidores" class="p-button-outlined p-button-secondary"></button>
-  </div>
+  <div fxFlex="40" class="mv-subnavbar">
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="mv-subnavbar-content">
+      <div class="mv-bemvindos">
+        <p>Olá, você está no ambiente - Produção</p>
+      </div>
 
-  <div class="row">
-    <h3>Selecionar ambiente:</h3>
-    <button pButton pRipple type="button" label="Produção" class="p-button-outlined p-button-secondary"></button>
-    <button pButton pRipple type="button" label="Simulação" class="p-button-outlined p-button-secondary"></button>
-    <button pButton pRipple type="button" label="Treinamento" class="p-button-outlined p-button-secondary"></button>
-    <button pButton pRipple type="button" label="Custom 01" class="p-button-outlined p-button-secondary"></button>
-    <button pButton pRipple type="button" label="Custom 02" class="p-button-outlined p-button-secondary"></button>
-  </div>
-
-  <div class="row">
-
-    <img src="assets/image/Vector(4).png" alt="">
-    <h3>Dowloands</h3>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-8">
-      <table>
-        <ng-template pTemplate="body" let-product>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td><button pButton pRipple type="button" label="Atualizar"
-                class="p-button-rounded p-button-secondary p-button-outlined"></button></td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td><button pButton pRipple type="button" label="Atualizar"
-                class="p-button-rounded p-button-secondary p-button-outlined"></button></td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td><button pButton pRipple type="button" label="Atualizar"
-                class="p-button-rounded p-button-secondary p-button-outlined"></button></td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td><button pButton pRipple type="button" label="Atualizar"
-                class="p-button-rounded p-button-secondary p-button-outlined"></button></td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td><button pButton pRipple type="button" label="Atualizar"
-                class="p-button-rounded p-button-secondary p-button-outlined"></button></td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td><button pButton pRipple type="button" label="Atualizar"
-                class="p-button-rounded p-button-secondary p-button-outlined"></button></td>
-          </tr>
-        </ng-template>
-      </table>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-4">
-      <img src="assets/image/HXPT.png" alt="">
+      <div class="mv-subnavbar-actions">
+        <button>Setup Atual</button>
+        <button>Servidores</button>
+      </div>
     </div>
   </div>
+</div>
+
+<div id="content">
+  <div id="select-ambiente">
+
+  </div>
+
+  <div id="content-aplicativos">
+    <div>
+      <div id="downloads">
+
+      </div>
+
+      <div id="instalacao">
+
+      </div>
+    </div>
+
+    <div id="info-empresa">
+
+    </div>
+  </div>
+</div>
+
+
