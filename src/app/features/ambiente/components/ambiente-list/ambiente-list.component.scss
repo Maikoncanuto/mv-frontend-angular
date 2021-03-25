@@ -9,20 +9,44 @@
   border: 1px solid #E1E1E1;
 }
 
+.mv-subnavbar {
+  align-items: baseline;
+}
+
 .mv-navbar-content {
   margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .mv-subnavbar-content {
   margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .mv-bemvindos > p {
   font-weight: 700;
   color: #08316C;
   font-size: 16px;
+}
+
+.mv-subnavbar-actions > button {
+  margin-left: 10px;
+  border: 1px solid #8C8C8C;
+  border-radius: 5px;
+  background-color: white;
+  color: #828282;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.mv-bel {
+  margin-left: 15px;
+  margin-right: 5px;
+  color: #9EA2A8;
+  font-size: 28px;
+  height: 28px;
+  width: 28px;
 }

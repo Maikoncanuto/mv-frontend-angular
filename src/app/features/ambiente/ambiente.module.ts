@@ -11,6 +11,8 @@ import {AmbienteListContainerComponent} from './containers/ambiente-list-contain
 import {AmbienteUpdateContainerComponent} from './containers/ambiente-update-container/ambiente-update-container.component';
 import {AmbienteCreateContainerComponent} from './containers/ambiente-create-container/ambiente-create-container.component';
 import {FlexLayoutModule, FlexModule} from '@angular/flex-layout';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import {FlexLayoutModule, FlexModule} from '@angular/flex-layout';
     CommonModule,
     AmbienteRoutingModule,
     FlexLayoutModule,
-    FlexModule
+    FlexModule,
+    FontAwesomeModule,
+    MatIconModule
   ]
 })
 export class AmbienteModule {
