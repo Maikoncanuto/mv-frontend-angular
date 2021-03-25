@@ -14,13 +14,13 @@ import { AmbienteCreateContainerComponent } from './containers/ambiente-create-c
 
 @NgModule({
   declarations: [
-    AmbienteListComponent, 
-    AmbienteCreateComponent, 
-    AmbienteUpdateComponent, 
-    AmbienteDeleteComponent, 
-    AmbienteDeleteContainerComponent, 
-    AmbienteListContainerComponent, 
-    AmbienteUpdateContainerComponent, 
+    AmbienteListComponent,
+    AmbienteCreateComponent,
+    AmbienteUpdateComponent,
+    AmbienteDeleteComponent,
+    AmbienteDeleteContainerComponent,
+    AmbienteListContainerComponent,
+    AmbienteUpdateContainerComponent,
     AmbienteCreateContainerComponent
   ],
   imports: [
