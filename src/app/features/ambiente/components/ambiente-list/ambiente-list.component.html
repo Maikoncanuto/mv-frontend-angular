@@ -3,7 +3,7 @@
   <div fxFlex="55" class="mv-navbar">
     <div fxLayout="row" fxLayoutAlign="space-between center" class="mv-navbar-content">
       <div class="logo">
-        <p>MVinstaller</p>
+        <img src="assets/logo.svg">
       </div>
 
       <div class="mv-navbar-actions" fxLayout="row">
@@ -20,22 +20,31 @@
       </div>
 
       <div class="mv-subnavbar-actions">
-        <button>Setup Atual</button>
-        <button>Servidores</button>
+        <button class="mv-button mv-button-default">Setup Atual</button>
+        <button class="mv-button mv-button-default">Servidores</button>
       </div>
     </div>
   </div>
 </div>
 
-<div id="content">
-  <div id="select-ambiente">
+<div class="mv-content" fxLayout="column" fxFlexAlign="space-around center">
+  <div class="select-ambiente" fxLayout="column">
+      <p>Selecionar Ambiente</p>
 
+      <div fxLayout="row">
+        <button class="mv-button mv-button-ambiente">Produção</button>
+        <button class="mv-button mv-button-ambiente-default">Simulação</button>
+        <button class="mv-button mv-button-ambiente-default">Treinamento</button>
+        <button class="mv-button mv-button-ambiente-default">Custom 01</button>
+        <button class="mv-button mv-button-ambiente-default">Custom 02</button>
+      </div>
   </div>
 
-  <div id="content-aplicativos">
-    <div>
-      <div id="downloads">
-
+  <div class="content-aplicativos" fxLayout="row">
+    <div fxLayout="column" fxFlex="60">
+      <div id="downloads" fxLayout="row">
+        <mat-icon class="mv-bel">notifications</mat-icon>
+        <span>Downloads</span>
       </div>
 
       <div id="instalacao">
@@ -43,7 +52,7 @@
       </div>
     </div>
 
-    <div id="info-empresa">
+    <div id="info-empresa" fxFlex="40">
 
     </div>
   </div>

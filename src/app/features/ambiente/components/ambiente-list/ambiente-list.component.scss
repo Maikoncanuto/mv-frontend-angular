@@ -1,6 +1,12 @@
+.mv-content {
+  padding-top: 40px;
+  padding-left: 25px;
+  width: 100%;
+}
+
 .mv-navbar-container {
   width: 100%;
-  height: 130px;
+  height: 140px;
   background-color: white;
   border: 1px solid #E1E1E1;
 }
@@ -15,31 +21,51 @@
 
 .mv-navbar-content {
   margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .mv-subnavbar-content {
   margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .mv-bemvindos > p {
-  font-weight: 700;
+  margin-top: 8px;
+  font-weight: 500;
   color: #08316C;
   font-size: 16px;
 }
 
-.mv-subnavbar-actions > button {
+.mv-button {
   margin-left: 10px;
-  border: 1px solid #8C8C8C;
   border-radius: 5px;
-  background-color: white;
-  color: #828282;
   padding: 6px 14px;
   font-size: 14px;
   cursor: pointer;
+}
+
+.mv-button-default {
+  border: 1px solid #8C8C8C;
+  background-color: white;
+  color: #828282;
+}
+
+.mv-button-ambiente {
+  border: 2px solid #2D4F6E;
+  background-color: white;
+  color: #2D4F6E;
+  font-weight: 500;
+  padding: 12px 28px;
+}
+
+.mv-button-ambiente-default {
+  border: 2px dotted #9EA2A8;
+  background-color: white;
+  color: #9EA2A8;
+  font-weight: 400;
+  padding: 12px 28px;
 }
 
 .mv-bel {
@@ -49,4 +75,14 @@
   font-size: 28px;
   height: 28px;
   width: 28px;
+}
+
+.select-ambiente > p {
+  color: #454545;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.content-aplicativos {
+ margin-top: 35px;
 }
