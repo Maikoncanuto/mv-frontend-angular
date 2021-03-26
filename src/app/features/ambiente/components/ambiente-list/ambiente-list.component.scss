@@ -31,7 +31,7 @@
   margin-right: 25px;
 }
 
-.mv-bemvindos > p {
+.mv-bemvindos>p {
   margin-top: 8px;
   font-weight: 500;
   color: #08316C;
@@ -68,6 +68,15 @@
   padding: 12px 28px;
 }
 
+.mv-button-rounded {
+  border: 1px solid #8C8C8C;
+  background-color: white;
+  color: #9EA2A8;
+  font-weight: 400;
+  padding: 12px 28px;
+  border-radius: 80px;
+}
+
 .mv-bel {
   margin-left: 15px;
   margin-right: 5px;
@@ -77,12 +86,57 @@
   width: 28px;
 }
 
-.select-ambiente > p {
+.select-ambiente>p {
   color: #454545;
   font-size: 16px;
   margin-left: 10px;
 }
 
 .content-aplicativos {
- margin-top: 35px;
+  margin-top: 35px;
+}
+
+.table th,
+.table td {
+  padding: 20px 10px 15px 58px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  background: white;
+}
+
+#info-empresa {
+  margin: 20px 50px;
+}
+
+.mv-button-rounded-green {
+  background: #00BC13;
+  border: 1px solid #00BC13;
+  box-sizing: border-box;
+  color: white;
+  padding: 6px 12px 12px;
+  border-radius: 999px;
+}
+
+.logo2 {
+  margin-bottom: 15px;
+}
+
+.mv-config {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.p-h {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+
+  display: flex;
+  align-items: center;
+
+  color: #454545;
+
 }

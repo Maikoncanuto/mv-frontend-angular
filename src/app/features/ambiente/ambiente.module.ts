@@ -13,6 +13,7 @@ import {AmbienteCreateContainerComponent} from './containers/ambiente-create-con
 import {FlexLayoutModule, FlexModule} from '@angular/flex-layout';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {MatIconModule} from '@angular/material/icon';
+import { MvAmbienteCardComponent } from './components/mv-ambiente-card/mv-ambiente-card.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {MatIconModule} from '@angular/material/icon';
     AmbienteDeleteContainerComponent,
     AmbienteListContainerComponent,
     AmbienteUpdateContainerComponent,
-    AmbienteCreateContainerComponent
+    AmbienteCreateContainerComponent,
+    MvAmbienteCardComponent
   ],
   imports: [
     CommonModule,
@@ -33,6 +35,9 @@ import {MatIconModule} from '@angular/material/icon';
     FlexModule,
     FontAwesomeModule,
     MatIconModule
+  ],
+  entryComponents: [
+    MvAmbienteCardComponent
   ]
 })
 export class AmbienteModule {

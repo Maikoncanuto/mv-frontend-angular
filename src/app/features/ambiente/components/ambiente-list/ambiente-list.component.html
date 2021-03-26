@@ -3,7 +3,7 @@
   <div fxFlex="55" class="mv-navbar">
     <div fxLayout="row" fxLayoutAlign="space-between center" class="mv-navbar-content">
       <div class="logo">
-        <img src="assets/logo.svg">
+        <img src="assets/image/logo.svg">
       </div>
 
       <div class="mv-navbar-actions" fxLayout="row">
@@ -29,15 +29,15 @@
 
 <div class="mv-content" fxLayout="column" fxFlexAlign="space-around center">
   <div class="select-ambiente" fxLayout="column">
-      <p>Selecionar Ambiente</p>
+    <p>Selecionar Ambiente</p>
 
-      <div fxLayout="row">
-        <button class="mv-button mv-button-ambiente">Produção</button>
-        <button class="mv-button mv-button-ambiente-default">Simulação</button>
-        <button class="mv-button mv-button-ambiente-default">Treinamento</button>
-        <button class="mv-button mv-button-ambiente-default">Custom 01</button>
-        <button class="mv-button mv-button-ambiente-default">Custom 02</button>
-      </div>
+    <div fxLayout="row">
+      <button class="mv-button mv-button-ambiente">Produção</button>
+      <button class="mv-button mv-button-ambiente-default">Simulação</button>
+      <button class="mv-button mv-button-ambiente-default">Treinamento</button>
+      <button class="mv-button mv-button-ambiente-default">Custom 01</button>
+      <button class="mv-button mv-button-ambiente-default">Custom 02</button>
+    </div>
   </div>
 
   <div class="content-aplicativos" fxLayout="row">
@@ -48,14 +48,71 @@
       </div>
 
       <div id="instalacao">
-
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>SOUL MV</td>
+              <td>Atualizar</td>
+              <td><button class="mv-button-rounded">Atualizar</button></td>
+            </tr>
+            <tr>
+              <td>SOUL MV</td>
+              <td>Atualizar</td>
+              <td><button class="mv-button-rounded">Atualizar</button></td>
+            </tr>
+            <tr>
+              <td>SOUL MV</td>
+              <td>Atualizar</td>
+              <td><button class="mv-button-rounded">Atualizar</button></td>
+            </tr>
+            <tr>
+              <td>SOUL MV</td>
+              <td>Atualizar</td>
+              <td><button class="mv-button-rounded">Atualizar</button></td>
+            </tr>
+            <tr>
+              <td>SOUL MV</td>
+              <td>Atualizar</td>
+              <td><button class="mv-button-rounded">Atualizar</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
     <div id="info-empresa" fxFlex="40">
-
+      <div class="logo2" fxLayout="row">
+        <img src="assets/image/logo2.png" alt="">
+      </div>
+      <div fxLayout="row">
+        <p class="p-h">Hospital XPToz</p>
+      </div>
+      <div fxLayout="row">
+        <button class="mv-button-rounded-green"><mat-icon class="mv-config">settings</mat-icon>Configurar ambiente</button>
+      </div>
+      <div fxLayout="row" style="margin-top: 35px;">
+         <p>pesso.sus@hotpitalxpto.com.br</p>
+      </div>
+      <div fxLayout="row">
+        <p><a href="">Ver atividades</a></p>
+      </div>
+      <div fxLayout="row">
+        <p>Última alteração de senha há 6 meses</p>
+     </div>
+     <div fxLayout="row">
+       <p><a href="">Ver alterações</a></p>
+     </div>
+    </div>
+  </div>
+  <div class="content-intalacao" fxLayout="row">
+    <div fxLayout="column">
+      <div id="downloads" fxLayout="row">
+        <mat-icon class="mv-bel">notifications</mat-icon>
+        <span>Instalação</span>
+      </div>
+    </div>
+    <div fxLayout="row">
+      <mv-ambiente-card></mv-ambiente-card> 
     </div>
   </div>
 </div>
-
-
