@@ -10,8 +10,8 @@ import {InformacaoEmpresaClienteConfig} from '../../../../shared/models/informac
 })
 export class AmbienteListComponent implements OnInit {
 
-  @Input() itensDownloads: ItemDownload[] | undefined | null = [];
-  @Input() informacaoEmpresaClienteConfig: InformacaoEmpresaClienteConfig | undefined | null = {};
+  @Input() itensDownloads: ItemDownload[] | undefined;
+  @Input() informacaoEmpresaClienteConfig: InformacaoEmpresaClienteConfig | undefined;
 
   @Output() onClickItemDownload: EventEmitter<any> = new EventEmitter<any>();
   @Output() onClickInformacaoEmpresaClienteAtividades: EventEmitter<any> = new EventEmitter<any>();

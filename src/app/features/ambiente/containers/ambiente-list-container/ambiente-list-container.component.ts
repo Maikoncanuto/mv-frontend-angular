@@ -10,15 +10,15 @@ import {InformacaoEmpresaClienteConfig} from '../../../../shared/models/informac
 })
 export class AmbienteListContainerComponent implements OnInit {
 
-  $downloads: Observable<ItemDownload[]> | undefined;
-  $informacaoEmpresaClienteConfig: Observable<InformacaoEmpresaClienteConfig> | undefined;
+  $downloads: Observable<any> | undefined;
+  $informacaoEmpresaClienteConfigModel: Observable<any> | undefined;
 
   constructor() {
   }
 
   ngOnInit(): void {
     this.$downloads = this.findAllDownloads();
-    this.$informacaoEmpresaClienteConfig = this.findInformacaoEmpresaCliente();
+    this.$informacaoEmpresaClienteConfigModel = this.findInformacaoEmpresaCliente();
   }
 
   findAllDownloads(): Observable<ItemDownload[]> {
