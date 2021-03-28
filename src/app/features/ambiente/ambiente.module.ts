@@ -13,9 +13,9 @@ import {AmbienteCreateContainerComponent} from './containers/ambiente-create-con
 import {FlexLayoutModule, FlexModule} from '@angular/flex-layout';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {MatIconModule} from '@angular/material/icon';
-import {AmbienteCardComponent} from './components/ambiente-card/ambiente-card.component';
-import { AmbienteTableItemComponent } from './components/ambiente-table-item/ambiente-table-item.component';
-import { AmbienteInformacaoEmpresaClienteComponent } from './components/ambiente-informacao-empresa-cliente/ambiente-informacao-empresa-cliente.component';
+import {AmbienteTableItemComponent} from './components/ambiente-table-item/ambiente-table-item.component';
+import {AmbienteInformacaoEmpresaClienteComponent} from './components/ambiente-informacao-empresa-cliente/ambiente-informacao-empresa-cliente.component';
+import {AmbienteCardInstalacaoComponent} from './components/ambiente-card-instalacao/ambiente-card-instalacao.component';
 
 
 @NgModule({
@@ -28,9 +28,9 @@ import { AmbienteInformacaoEmpresaClienteComponent } from './components/ambiente
     AmbienteListContainerComponent,
     AmbienteUpdateContainerComponent,
     AmbienteCreateContainerComponent,
-    AmbienteCardComponent,
     AmbienteTableItemComponent,
     AmbienteInformacaoEmpresaClienteComponent,
+    AmbienteCardInstalacaoComponent,
   ],
   imports: [
     CommonModule,
