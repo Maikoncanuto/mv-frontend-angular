@@ -3,7 +3,7 @@
   <div fxFlex="55" class="mv-navbar">
     <div fxLayout="row" fxLayoutAlign="space-between center" class="mv-navbar-content">
       <div class="logo">
-        <img src="assets/image/logo.svg">
+        <img alt="Logo da empresa" src="../../../../../assets/image/logo.svg">
       </div>
 
       <div class="mv-navbar-actions" fxLayout="row">
@@ -41,82 +41,31 @@
   </div>
 
   <div class="content-aplicativos" fxLayout="row">
-    <div fxLayout="column" fxFlex="60">
+    <div fxLayout="column" fxFlex="70">
       <div fxLayout="row">
-        <mat-icon class="mv-bel">notifications</mat-icon>
-        <span>Downloads</span>
+        <mat-icon class="mv-bel">cloud_download</mat-icon>
+        <span class="title-icon-download">Downloads</span>
       </div>
 
-      <div id="instalacao">
-        <table class="table">
-          <tbody>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td>
-              <button class="mv-button-rounded">Atualizar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td>
-              <button class="mv-button-rounded">Atualizar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td>
-              <button class="mv-button-rounded">Atualizar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td>
-              <button class="mv-button-rounded">Atualizar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>SOUL MV</td>
-            <td>Atualizar</td>
-            <td>
-              <button class="mv-button-rounded">Atualizar</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+      <div class="itens-downloads-container">
+          <mv-ambiente-table-item *ngFor="let itemDownload of itensDownloads"
+                                  (onClick)="clickItemDownload(itemDownload)"
+                                  [nome]="itemDownload.nome"
+                                  [status]="itemDownload.status">
+          </mv-ambiente-table-item>
       </div>
     </div>
 
-    <div id="info-empresa" fxFlex="40">
-      <div class="logo2" fxLayout="row">
-        <img src="assets/image/logo2.png" alt="">
-      </div>
-      <div fxLayout="row">
-        <p class="p-h">Hospital XPToz</p>
-      </div>
-      <div fxLayout="row">
-        <button class="mv-button-rounded-green">
-          <mat-icon class="mv-config">settings</mat-icon>
-          Configurar ambiente
-        </button>
-      </div>
-      <div fxLayout="row" style="margin-top: 35px;">
-        <p>pesso.sus@hotpitalxpto.com.br</p>
-      </div>
-      <div fxLayout="row">
-        <p><a href="">Ver atividades</a></p>
-      </div>
-      <div fxLayout="row">
-        <p>Última alteração de senha há 6 meses</p>
-      </div>
-      <div fxLayout="row">
-        <p><a href="">Ver alterações</a></p>
-      </div>
+    <div class="info-empresa" fxFlex="30">
+      <mv-ambiente-informacao-empresa-cliente
+        (onClickAlteracaoSenha)="clickInformacaoEmpresaClienteAlteracaoSenha()"
+        (onClickAtividades)="clickInformacaoEmpresaClienteAtividades()"
+        (onClickConfigurarAmbiente)="clickInformacaoEmpresaClienteConfigurarAmbiente()"
+        [informacaoEmpresClienteConfig]="informacaoEmpresaClienteConfig"
+      ></mv-ambiente-informacao-empresa-cliente>
     </div>
   </div>
+
   <div class="content-intalacao" fxLayout="row">
     <div fxLayout="column">
       <div id="downloads" fxLayout="row">

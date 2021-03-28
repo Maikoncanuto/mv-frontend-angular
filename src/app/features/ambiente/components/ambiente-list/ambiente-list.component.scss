@@ -1,7 +1,6 @@
 .mv-content {
-  padding-top: 40px;
-  padding-left: 25px;
-  width: 100%;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 .mv-navbar-container {
@@ -93,50 +92,18 @@
 }
 
 .content-aplicativos {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
-.table th,
-.table td {
-  padding: 20px 10px 15px 58px;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-  background: white;
+.info-empresa {
+  margin-left: 40px;
+  margin-top: 45px;
 }
 
-#info-empresa {
-  margin: 20px 50px;
+.itens-downloads-container {
+ margin-top: 20px;
 }
 
-.mv-button-rounded-green {
-  background: #00BC13;
-  border: 1px solid #00BC13;
-  box-sizing: border-box;
-  color: white;
-  padding: 6px 12px 12px;
-  border-radius: 999px;
-}
-
-.logo2 {
-  margin-bottom: 15px;
-}
-
-.mv-config {
-  position: relative;
-  top: 5px;
-  margin-right: 10px;
-}
-
-.p-h {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-
-  display: flex;
-  align-items: center;
-
-  color: #454545;
-
+.title-icon-download {
+  margin-top: 5px;
 }

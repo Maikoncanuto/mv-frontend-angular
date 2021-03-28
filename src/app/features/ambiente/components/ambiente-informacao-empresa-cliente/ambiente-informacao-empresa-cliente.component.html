@@ -1,0 +1,29 @@
+<div class="logo-cliente" fxLayout="row">
+  <img src="../../../../../assets/image/logo-cliente.png" alt="Logo do cliente">
+</div>
+
+<div fxLayout="row">
+  <p class="title-cliente">{{informacaoEmpresClienteConfig?.empresaCliente?.nome}}</p>
+</div>
+
+<div fxLayout="row">
+  <button (click)="clickConfigurarAmbiente()" class="mv-button-rounded-green">
+    <mat-icon class="mv-config">settings</mat-icon>
+    {{informacaoEmpresClienteConfig?.nomeBotaoAmbiente}}
+  </button>
+</div>
+
+<div fxLayout="row">
+  <p>{{informacaoEmpresClienteConfig?.empresaCliente?.email}}</p>
+</div>
+
+<div fxLayout="row">
+  <p><a href="" (click)="clickAtividades()">{{informacaoEmpresClienteConfig?.nomeAtividades}}</a></p>
+</div>
+
+<div fxLayout="column">
+  <p>{{informacaoEmpresClienteConfig?.tituloFraseAlteracaoSenha}}</p>
+  <p><a href="" (click)="clickAlteracaoSenha()">{{informacaoEmpresClienteConfig?.nomeAlteracaoSenha}}</a></p>
+</div>
+
+
