@@ -1,29 +1,26 @@
-<div class="logo-cliente" fxLayout="row">
-  <img src="../../../../../assets/image/logo-cliente.png" alt="Logo do cliente">
-</div>
 
-<div fxLayout="row">
-  <p class="title-cliente">{{informacaoEmpresClienteConfig?.empresaCliente?.nome}}</p>
-</div>
 
-<div fxLayout="row">
-  <button (click)="clickConfigurarAmbiente()" class="mv-button-rounded-green">
-    <mat-icon class="mv-config">settings</mat-icon>
-    {{informacaoEmpresClienteConfig?.nomeBotaoAmbiente}}
+
+<div fxLayout="column" fxFlexAlign="space-around center" class="mv-config">
+  <div fxFlex="20" class="logo-cliente">
+    <img src="../../../../../assets/image/logo-cliente.png" alt="Logo do cliente">
+  </div>
+
+  <div fxFlex="20">
+    <p class="title-cliente">{{informacaoEmpresClienteConfig?.empresaCliente?.nome}}</p>
+  </div>
+
+  <button fxFlex="20" fxFlexAlign="space-evenly center" (click)="clickConfigurarAmbiente()" class="mv-button-rounded-green">
+    <mat-icon fxFlex="15">settings</mat-icon> <span class="mv-nome-botao-ambiente">{{informacaoEmpresClienteConfig?.nomeBotaoAmbiente}}</span>
   </button>
+
+  <div fxFlex="20" fxLayout="column" class="mv-info-empresa-cliente-item">
+    <p class="title">{{informacaoEmpresClienteConfig?.empresaCliente?.email}}</p>
+    <p class="link"><a href="" (click)="clickAtividades()">{{informacaoEmpresClienteConfig?.nomeAtividades}}</a></p>
+  </div>
+
+  <div fxFlex="20" fxLayout="column" class="mv-info-empresa-cliente-item">
+    <p class="title">{{informacaoEmpresClienteConfig?.tituloFraseAlteracaoSenha}}</p>
+    <p class="link"><a href="" (click)="clickAlteracaoSenha()">{{informacaoEmpresClienteConfig?.nomeAlteracaoSenha}}</a></p>
+  </div>
 </div>
-
-<div fxLayout="row">
-  <p>{{informacaoEmpresClienteConfig?.empresaCliente?.email}}</p>
-</div>
-
-<div fxLayout="row">
-  <p><a href="" (click)="clickAtividades()">{{informacaoEmpresClienteConfig?.nomeAtividades}}</a></p>
-</div>
-
-<div fxLayout="column">
-  <p>{{informacaoEmpresClienteConfig?.tituloFraseAlteracaoSenha}}</p>
-  <p><a href="" (click)="clickAlteracaoSenha()">{{informacaoEmpresClienteConfig?.nomeAlteracaoSenha}}</a></p>
-</div>
-
-

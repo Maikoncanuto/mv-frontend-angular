@@ -3,14 +3,16 @@
   border: 1px solid #00BC13;
   box-sizing: border-box;
   color: white;
-  padding: 6px 12px 12px;
-  border-radius: 999px;
+  padding: 6px 20px;
+  border-radius: 80px;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.mv-config {
-  position: relative;
-  top: 5px;
-  margin-right: 10px;
+.mv-nome-botao-ambiente {
+  margin-left: 5px;
+  margin-top: 3px;
 }
 
 .title-cliente {
@@ -27,4 +29,13 @@
 
 .logo-cliente {
   margin-bottom: 15px;
+}
+
+.mv-info-empresa-cliente-item {
+  width: 250px;
+  border-top: 1px solid #c3c3c3;
+}
+
+.mv-info-empresa-cliente-item > .title {
+  margin-top: 10px;
 }

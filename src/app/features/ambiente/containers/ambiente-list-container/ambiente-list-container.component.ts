@@ -23,10 +23,12 @@ export class AmbienteListContainerComponent implements OnInit {
 
   findAllDownloads(): Observable<ItemDownload[]> {
     const downloads: ItemDownload[] = [
-      {id: 1, nome: 'SOUL MV', status: 'Atualizar'},
-      {id: 2, nome: 'SOUL MV', status: 'Atualizar'},
-      {id: 3, nome: 'SOUL MV', status: 'Atualizar'},
-      {id: 4, nome: 'SOUL MV', status: 'Atualizar'}
+      {id: 1, nome: 'Aplicativo 1', status: 'Atualizar'},
+      {id: 2, nome: 'Aplicativo 2', status: 'Instalado'},
+      {id: 3, nome: 'Aplicativo 3', status: 'Pronto'},
+      {id: 4, nome: 'Aplicativo 4', status: 'Atualizar'},
+      {id: 5, nome: 'Aplicativo 5', status: 'Download'},
+      {id: 6, nome: 'Aplicativo 6', status: 'Atualizar'},
     ];
 
     return of(downloads);
