@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import { MvAmbienteCardComponent } from '../mv-ambiente-card/mv-ambiente-card.component';
-
 
 
 @Component({
@@ -10,8 +8,8 @@ import { MvAmbienteCardComponent } from '../mv-ambiente-card/mv-ambiente-card.co
 })
 export class AmbienteListComponent implements OnInit {
 
-  constructor(public mvcard: MvAmbienteCardComponent) {
-    
+  constructor() {
+
   }
 
   ngOnInit(): void {
